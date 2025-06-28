@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "nama": "Bidang Keirjenan",
+    "keterangan": "Keirjenan bertugas untuk memastikan, menjaga, dan meningkatkan performa kinerja dari masing-masing bagian di BEM melalui proses monitoring dan evaluasi dengan cara-cara yang terukur dan metodologis",
+    "img": "",
+    "arahgerak": "Memastikan hadirnya ruang aktualisasi mahasiswa dengan memberikan layanan mahasiswa maupun kegiatan produktif demi terciptanya kesejahteraan dan pengembangan mahasiswa yang optimal.",
+    "prinsip": [
+      "Mengedepankan prinsip humanis dalam dinamika kemenkoan",
+      "Responsif dan adaptif dalam menjalankan fungsi pelayanan pada setiap isu kemahasiswaan di tingkat universias yang sesuai dengan kebutuhan konstituen",
+      "Inklusif, kreatif, dan inovatif dalam menciptakan ruang aktualisasi diri setiap mahasiswa",
+      "Menjadi mitra strategis bagi universitas dan kepentingan mahasiswa dengan berpijak pada keberpihakan yang jelas."
+    ],
+    "biroKedirjenan": [
+      {
+        "namaBiroKedirjenan": "Biro PSDM",
+        "keteranganBiroKedirjenan": "Biro PSDM memiliki tugas utama untuk mengembangkan kualitas kinerja sumber daya manusia yang berada di BEM KM UGM. Hal tersebut diwujudkan melalui program-program pengembangan, seperti apresiasi kinerja, kaderisasi, upgrading, menjalin relasi dengan eksternal yang linier dengan bidang sumber daya manusia, dan event-event keakraban untuk internal BEM KM UGM.",
+        "prokerBiroKedirjenan": [
+          {
+            "idProker": "01",
+            "namaProker": "Open Recruitment"
+          },
+          {
+            "idProker": "02",
+            "namaProker": "Malam Keakraban PSDM"
+          },
+          {
+            "idProker": "03",
+            "namaProker": "Action League"
+          },
+          {
+            "idProker": "04",
+            "namaProker": "Greetings"
+          },
+          {
+            "idProker": "05",
+            "namaProker": "Asthana Sakala"
+          },
+          {
+            "idProker": "06",
+            "namaProker": "Wall Of Frame"
+          },
+          {
+            "idProker": "07",
+            "namaProker": "Wall Of Appreciation"
+          },
+          {
+            "idProker": "08",
+            "namaProker": "Bincang PSDM"
+          },
+          {
+            "idProker": "09",
+            "namaProker": "Farewell Party"
+          },
+          {
+            "idProker": "10",
+            "namaProker": "PSDM Goes To"
+          }
+        ]
+      },
+      {
+        "namaBiroKedirjenan": "Biro PPM",
+        "keteranganBiroKedirjenan": "Menjadikan Biro PPM sebagai wadah monitoring, pengawasan, dan pengaduan permasalahan setiap biro/kementerian yang ada di BEM KM UGM sesuai dengan SOP (standard operating procedure) yang berlaku.",
+        "prokerBiroKedirjenan": [
+          {
+            "idProker": "01",
+            "namaProker": "Database Staff"
+          },
+          {
+            "idProker": "02",
+            "namaProker": "Mentoring Staff"
+          },
+          {
+            "idProker": "03",
+            "namaProker": "Fiksasi SOP"
+          },
+          {
+            "idProker": "04",
+            "namaProker": "Performace Appraisals"
+          },
+          {
+            "idProker": "05",
+            "namaProker": "REKOMPUT Staff"
+          },
+          {
+            "idProker": "06",
+            "namaProker": "Jaring Opini BEM KM"
+          },
+          {
+            "idProker": "07",
+            "namaProker": "Sekolah Personalia"
+          },
+          {
+            "idProker": "08",
+            "namaProker": "KPI BEM KM"
+          },
+          {
+            "idProker": "09",
+            "namaProker": "Satgas Internal PPKS BEM KM UGM"
+          },
+          {
+            "idProker": "10",
+            "namaProker": "Forum Personalia"
+          },
+          {
+            "idProker": "11",
+            "namaProker": "Malam Keakraban PPM"
+          },
+          {
+            "idProker": "12",
+            "namaProker": "Upgrading Asthana Kusala"
+          },
+          {
+            "idProker": "13",
+            "namaProker": "Pengelolaan Akun Instagram PPM"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+export { default as HeroBeranda } from './HeroBeranda'
+export { default as SambutanKetua } from './SambutanKetua'
+export { default as BerdinamikaBersama } from './BerdinamikaBersama'
+export { default as Kilasbara } from './Kilasbara'
+export { default as Kajian } from './Kajian'
+export { default as Layanan } from './Layanan'

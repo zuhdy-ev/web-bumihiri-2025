@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-gradient-navbar {
+    background: linear-gradient(0deg, #225c9f, #0eb7ce);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+    rgb(var(--background-start-rgb));
+}
+
+/* --- Font Family --- */
+
+@font-face {
+  font-family: 'MADE TOMMY Bold';
+  src: url('../../public/fonts/MADE TOMMY Bold.otf');
+}
+
+@font-face {
+  font-family: 'MADE TOMMY ExtraBold';
+  src: url('../../public/fonts/MADE TOMMY ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'MADE TOMMY Light';
+  src: url('../../public/fonts/MADE TOMMY Light.otf');
+}
+
+@font-face {
+  font-family: 'MADE TOMMY Medium';
+  src: url('../../public/fonts/MADE TOMMY Medium.otf');
+}
+
+@font-face {
+  font-family: 'MADE TOMMY Regular';
+  src: url('../../public/fonts/MADE TOMMY Regular.otf');
+}
+
+@font-face {
+  font-family: 'MADE TOMMY Thin';
+  src: url('../../public/fonts/MADE TOMMY Thin.otf');
+}
+
+/* --- Scrollbar --- */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Custom scrollbar styles */
+.scrollbar-custom::-webkit-scrollbar {
+  height: 5px; /* Adjust scrollbar height for horizontal scrollbar */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #666666; /* Track color */
+  margin: 100px; /* Creates padding around scrollbar */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #888; /* Thumb color */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+  border: 3px solid #f1f1f1; /* Creates padding around thumb */
+  width: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background-color: #0eb7ce; /* Thumb color on hover */
+}
+
+/* --- Swiper js --- */
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: calc((100% - 30px) / 2) !important; */
+}
+
+.swiper-slide img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

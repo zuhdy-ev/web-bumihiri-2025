@@ -1,0 +1,6 @@
+export { default as HeroProfil } from './HeroProfil'
+export { default as VisiMisi } from './VisiMisi'
+export { default as StrukturOrganisasi } from './StrukturOrganisasi'
+export { default as Bidang } from './Bidang'
+export { default as AgendaUtama } from './AgendaUtama'
+export { default as Filosofi } from './Filosofi'

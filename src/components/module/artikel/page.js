@@ -1,4 +1,3 @@
-export { default as HeroKajian } from './HeroKajian'
-export { default as ListKilasbara } from './ListKilasbara'
-export { default as ListKajian } from './ListKajian'
+export { default as HeroArtikel } from './HeroArtikel'
+export { default as ListArtikel } from './ListArtikel'
 export { default as ArtikelDetail } from './detail/ArtikelDetail'

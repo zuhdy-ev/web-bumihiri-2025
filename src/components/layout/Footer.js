@@ -4,65 +4,62 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="w-full bottom-0 py-5 px-5 flex flex-col items-center justify-center bg-primary-color z-50">
-      {/* Line */}
-      <div className="w-full h-[1px] bg-gradient-to-r from-blue-800 via-purple-600 to-red-600 mb-5"></div>
-      <div className="relative my-10 max-w-[1920px] w-full flex flex-col md:flex-row items-start justify-center">
-        {/* Logo */}
-        <div className="mb-5">
+    <footer className="relative w-full bottom-0 py-5 px-5 h-[35vh] max-h-[300px] flex flex-col items-center justify-center bg-gradient-to-r from-[#306600] via-[#5CA41C] to-[#306600] z-50 overflow-hidden">
+      <div className='w-full relative right-0 z-0'>
+        <Image
+          src={'assets/footer/footer_asset.svg'}
+          alt='footer asset'
+          width={0}
+          height={0}
+          className='w-fit'
+        />
+      </div>
+      <div className='w-full max-w-[1440px] h-full absolute z-10 flex flex-col md:flex-row p-5 pl-28 gap-5 items-center justify-center'>
+        <div className='w-full md:w-1/2'>
           <Image
-            src={'/assets/footer/logo_bemkm_ugm_no_text.png'}
-            alt="logo bemkm ugm 2024"
-            width={216 / 2}
-            height={180}
+            src={'assets/footer/Logo & Lambang Bumi Hiri 25.svg'}
+            alt='Bumi Hiri 2025'
+            width={0}
+            height={0}
+            className='w-32 md:w-[25vw] max-w-[350px] h-auto object-contain'
           />
         </div>
-        {/* Note */}
-        <div className="flex flex-col gap-3">
-          <div className="text-3xl font-made-tommy-bold px-2">BEM KM UGM</div>
-          <p className="font-made-tommy-regular px-2 text-sm md:text-xl max-w-[600px]">
-            Blok E5, Jl. Yacaranda, Blimbing Sari, Caturtunggal, Kec. Depok, Kabupaten Sleman,
-            Daerah Istimewa Yogyakarta 55281
-          </p>
-          <div className="flex">
-            <Link href={`mailto:bemkm@ugm.ac.id`} target="blank">
-              <Image src={'/assets/footer/Button Email.png'} alt="email" width={62} height={62} />
-            </Link>
-            <Link href={`https://www.instagram.com/bemkm_ugm/`} target="blank">
-              <Image src={'/assets/footer/Button IG.png'} alt="instagram" width={62} height={62} />
-            </Link>
-            {/* <Link href={`/`} target="blank">
-              <Image src={'/assets/footer/Button Line.png'} alt="line" width={62} height={62} />
-            </Link> */}
-            <Link href={`https://www.linkedin.com/company/bemugm-2024/`} target="blank">
-              <Image
-                src={'/assets/footer/Button Linkedin.png'}
-                alt="linkedin"
-                width={62}
-                height={62}
+        <div className='w-full md:w-1/2  flex flex-col gap-2 text-[10px] items-start justify-center md:items-end md:mr-10'>
+          <div className='flex gap-2'>
+             <Image
+                src={'assets/footer/footer_icon_ig.svg'}
+                alt='Ig Bumi Hiri 2025'
+                width={0}
+                height={0}
+                className='w-[15px] md:w-[20px]'
               />
-            </Link>
-            <Link href={`https://wa.me/6289678784224`} target="blank">
-              <Image src={'/assets/footer/Button WA.png'} alt="wa" width={62} height={62} />
-            </Link>
-            <Link href={`https://x.com/bemkm_ugm`} target="blank">
-              <Image src={'/assets/footer/Button X.png'} alt="x" width={62} height={62} />
-            </Link>
-            <Link href={`https://www.youtube.com/channel/UCWbDgm6gOURtpcx_4GqdjQA`} target="blank">
-              <Image src={'/assets/footer/Button YT.png'} alt="youtube" width={62} height={62} />
-            </Link>
+            <div className='text-[10px] lg:text-[12px]'>@bumihiri</div>
+          </div>
+          <div className='flex gap-2'>
+             <Image
+                src={'assets/footer/footer_icon_tiktok.svg'}
+                alt='TikTok Bumi Hiri 2025'
+                width={0}
+                height={0}
+                className='w-[15px] md:w-[20px]'
+              />
+            <div className='text-[10px] lg:text-[12px]'>@bumihiri</div>
+          </div>
+          <div className='flex gap-2'>
+             <Image
+                src={'assets/footer/footer_icon_gmail.svg'}
+                alt='Gmail Bumi Hiri 2025'
+                width={0}
+                height={0}
+                className='w-[15px] md:w-[20px]'
+              />
+            <div className='text-[10px] lg:text-[12px]'>hirinesia2025@gmail.com</div>
           </div>
         </div>
       </div>
-      <div className="">
-        <p className="text-center text-sm md:text-base">BEM KM UGM 2024. All Rights Reserved.</p>
+      <div className='w-full h-5 md:h-7 xl:h-9 bg-white absolute bottom-0 flex items-center justify-center'>
+        <div className='text-primary-green text-[10px] md:text-[12px] xl:text-[15px] font-bold'>© Bumi Hiri 2025</div>
       </div>
-      <script
-        async=""
-        src="https://embed.tawk.to/66965f5dbecc2fed6925ddcf/1i2tm91jv"
-        charset="UTF-8"
-        crosssorigin="*"
-      ></script>
     </footer>
   )
 }

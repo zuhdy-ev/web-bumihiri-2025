@@ -8,7 +8,7 @@ import {
   AgendaUtama,
   Filosofi,
 } from '@/components/module/profil/page'
-import SambutanKetua from '@/components/module/beranda/SambutanKetua'
+import SambutanKetua from '@/components/module/beranda/TentangKami'
 
 export default function Profil() {
   return (

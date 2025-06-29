@@ -11,21 +11,21 @@ export default function Nav({ active }) {
   }
 
   return (
-    <nav className="fixed w-full top-0 px-5 py-3 md:px-20 md:py-1 flex items-center justify-center bg-primary-color z-50">
+    <nav className="fixed w-full top-0 px-5 py-1 md:px-20 md:py-1 flex items-center justify-center bg-primary-green z-50">
       <div className="relative max-w-[1920px] w-full flex items-center justify-between">
-        <div className="w-44 md:w-80">
+        <div className="w-1/2 md:w-80 py-2">
           <Link href={'/'}>
-            <Image src={'/assets/Logo BEMKM UGM.png'} alt="logo" width={405} height={88} />
+            <Image src={'/assets/Lambang Bumi Hiri 25.png'} alt="logo" width={0} height={0} className='w-[60px] md:w-[80px]'/>
           </Link>
         </div>
         <div>
           {/* Nav Link */}
           <div className="hidden lg:block">
-            <div className="font-made-tommy-regular text-lg ml-4 flex items-center space-x-10">
+            <div className="font-made-tommy-regular ml-4 flex items-center space-x-10 text-[12px] lg:text-[15px]">
               <Link
                 href="/"
                 className={`${
-                  active === 'beranda' ? 'text-gradient-navbar' : 'text-white'
+                  active === 'beranda' ? 'text-white border-2 border-white rounded-full' : 'text-white'
                 }  py-2 px-6`}
               >
                 Beranda
@@ -33,7 +33,7 @@ export default function Nav({ active }) {
               <Link
                 href="/profil"
                 className={`${
-                  active === 'profil' ? 'text-gradient-navbar' : 'text-white'
+                  active === 'profil' ? 'text-white border-2 border-white rounded-full' : 'text-white'
                 }  py-2 px-6`}
               >
                 Profil
@@ -41,14 +41,14 @@ export default function Nav({ active }) {
               <Link
                 href="/artikel"
                 className={`${
-                  active === 'artikel' ? 'text-gradient-navbar' : 'text-white'
+                  active === 'artikel' ? 'text-white border-2 border-white rounded-full' : 'text-white'
                 }  py-2 px-6`}
               >
                 Artikel
               </Link>
               <Link
                 href="/sop"
-                className={`${active === 'sop' ? 'text-gradient-navbar' : 'text-white'}  py-2 px-6`}
+                className={`${active === 'sop' ? 'text-white border-2 border-white rounded-full' : 'text-white'}  py-2 px-6`}
               >
                 SOP
               </Link>
@@ -83,15 +83,15 @@ export default function Nav({ active }) {
       </div>
       {/* Responsive Menu */}
       <div
-        className={`lg:hidden absolute w-full top-[65px] md:top-[84px] transition-max-height bg-black rounded-b-lg duration-1000 ease-in-out overflow-hidden ${
+        className={`lg:hidden absolute w-full top-[60px] md:top-[73px] transition-max-height bg-primary-green bg-opacity-90 rounded-b-lg duration-1000 ease-in-out overflow-hidden ${
           isClick ? 'max-h-screen' : 'max-h-0 '
         }`}
       >
-        <div className="flex flex-col p-5 gap-5 font-made-tommy-regular text-lg">
+        <div className="flex flex-col p-5 gap-5 font-made-tommy-regular text-[12px]">
           <Link
             href={`/`}
             className={`${
-              active === 'beranda' ? 'text-gradient-navbar' : 'text-white'
+              active === 'beranda' ? 'text-white border-2 border-white rounded-full' : 'text-white'
             } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
           >
             Beranda
@@ -99,7 +99,7 @@ export default function Nav({ active }) {
           <Link
             href={`/profil`}
             className={`${
-              active === 'profil' ? 'text-gradient-navbar' : 'text-white'
+              active === 'profil' ? 'text-white border-2 border-white rounded-full' : 'text-white'
             } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
           >
             Profil
@@ -107,7 +107,7 @@ export default function Nav({ active }) {
           <Link
             href={`/artikel`}
             className={`${
-              active === 'artikel' ? 'text-gradient-navbar' : 'text-white'
+              active === 'artikel' ? 'text-white border-2 border-white rounded-full' : 'text-white'
             } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
           >
             Artikel
@@ -115,7 +115,7 @@ export default function Nav({ active }) {
           <Link
             href={`/sop`}
             className={`${
-              active === 'sop' ? 'text-gradient-navbar' : 'text-white'
+              active === 'sop' ? 'text-white border-2 border-white rounded-full' : 'text-white'
             } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
           >
             SOP

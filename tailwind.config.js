@@ -12,6 +12,7 @@ module.exports = {
         s: '550px',
       },
       colors: {
+        'primary-green': '#306600',
         'primary-color': '#202020',
         'light-red': '#CC2139',
         'dark-red': '#66111D',

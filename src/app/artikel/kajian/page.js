@@ -6,10 +6,12 @@ import { convertToSlug } from '@/app/artikel/kajian/[kajianId]/page'
 
 export default function Oprec() {
   return (
-    <main className="bg-primary-color w-full min-h-screen py-36">
+    <main className="bg-white w-full min-h-screen py-36">
       <Nav active="artikel" />
       <div className="flex flex-col mb-10">
-        <p className="text-xl md:text-3xl text-center font-made-tommy-bold my-2 px-5 text-orange-500">KAJIAN</p>
+        <p className="text-xl md:text-3xl text-center font-made-tommy-bold my-2 px-5 text-orange-500">
+          KAJIAN
+        </p>
         <p className="text-[13px] lg:text-lg xl:text-xl text-center my-2 px-5">
           Baca kumpulan kajian ilmiah yang kami tulis untuk menanggapi berbagai isu yang ada kampus,
           regional DIY, nasional, hingga internasional.

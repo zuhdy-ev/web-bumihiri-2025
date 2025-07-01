@@ -1,0 +1,5 @@
+export { default as HeroHiri } from './HeroHiri'
+export { default as ProfilHiri } from './ProfilHiri'
+export { default as KelurahanHiri } from './KelurahanHiri'
+export { default as WisataHiri } from './WisataHiri'
+export { default as KulinerHiri } from './KulinerHiri'

@@ -3,7 +3,7 @@ import { ArtikelCard } from '@/components/element/artikel/page'
 import axios from 'axios'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { convertToSlug } from '@/app/artikel/kajian/[kajianId]/page'
+// import { convertToSlug } from '@/app/artikel/[kajianId]/page'
 import dataKajian from '@/data/artikelKajian.json'
 import Image from 'next/image'
 
@@ -48,7 +48,8 @@ export default function Artikel() {
                         <ArtikelCard
                           gambar={item.gambar} // Masukkan properti gambar
                           judul={item.judul} // Masukkan judul artikel
-                          link={`/artikel/kajian/${convertToSlug(item.judul)}`} // Tautkan ke halaman detail artikel
+                          // link={`/artikel/kajian/${convertToSlug(item.judul)}`} // Tautkan ke halaman detail artikel
+                          link={`/artikel/kajian/`} // Tautkan ke halaman detail artikel
                         />
                       </div>
                     )

@@ -16,7 +16,7 @@ export default function HeroArtikel() {
       <div className="absolute w-full h-full flex items-center justify-center top-0 max-w-[1920px]">
         <div className="w-[70%] md:w-[40%] max-w-[500px] z-20">
           <Image
-            src={`/assets/artikel/hero_title.svg`}
+            src={`/assets/galeri/hero_title.svg`}
             alt={`image`}
             width={0}
             height={0}

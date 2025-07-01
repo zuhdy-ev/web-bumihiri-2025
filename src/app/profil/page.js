@@ -2,25 +2,23 @@ import React from 'react'
 import Nav from '@/components/layout/Nav'
 import {
   HeroProfil,
-  VisiMisi,
-  StrukturOrganisasi,
-  Bidang,
-  AgendaUtama,
-  Filosofi,
+  TentangKamiProfil,
+  Tema,
+  ProkerUnggulan,
+  DPL,
+  HumansAtBumiHiri,
 } from '@/components/module/profil/page'
-import SambutanKetua from '@/components/module/beranda/TentangKami'
 
 export default function Profil() {
   return (
     <main className="bg-primary-color text-white">
       <Nav active="profil" />
       <HeroProfil />
-      <SambutanKetua />
-      <VisiMisi />
-      <StrukturOrganisasi />
-      <Bidang />
-      <AgendaUtama />
-      <Filosofi />
+      <TentangKamiProfil />
+      <Tema />
+      <ProkerUnggulan />
+      <DPL />
+      <HumansAtBumiHiri />
     </main>
   )
 }

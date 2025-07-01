@@ -55,7 +55,7 @@ export default function DetailKajian({ params }) {
 
   if (!kajian) {
     return (
-      <main className="bg-primary-color text-white w-full h-full">
+      <main className="bg-white text-white w-full h-full">
         <Nav active="artikel" />
         <div className="pt-20 min-h-screen flex justify-center items-center">
           <p>Artikel kajian tidak ditemukan</p>
@@ -65,7 +65,7 @@ export default function DetailKajian({ params }) {
   }
 
   return (
-    <main className="bg-primary-color text-white w-full h-full">
+    <main className="bg-white text-white w-full h-full">
       <Nav active="artikel" />
       <div className="pt-20 min-h-screen flex justify-center items-center">
         <ArtikelDetail

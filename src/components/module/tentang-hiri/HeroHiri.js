@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-export default function HeroArtikel() {
+export default function HeroHiri() {
   return (
     <section className="relative w-full h-[70vh] max-h-[960px] flex items-center justify-center drop-shadow">
       <div className="absolute w-full h-full top-0 z-0">
@@ -14,9 +14,9 @@ export default function HeroArtikel() {
         />
       </div>
       <div className="absolute w-full h-full flex items-center justify-center top-0 max-w-[1920px]">
-        <div className="w-[70%] md:w-[30%] max-w-[600px] z-20 flex items-center justify-center lg:translate-y-5">
+        <div className="w-full max-w-[800px] z-20 flex items-center justify-center md:translate-y-10">
           <Image
-            src={`/assets/profil/Hero_Logo Bumi Hiri 2025.svg`}
+            src={`/assets/tentang-hiri/hero_title.svg`}
             alt={`image`}
             width={0}
             height={0}

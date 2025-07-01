@@ -7,7 +7,9 @@ import { convertToSlug } from '@/app/artikel/kilasbara/[kilasbaraId]/page.js'
 
 export default function DetailKilasbara({ params }) {
   const { kilasbaraId } = params
-  const kilasbara = dataKilasbara.find((kilasbara) => convertToSlug(kilasbara.judul) === kilasbaraId)
+  const kilasbara = dataKilasbara.find(
+    (kilasbara) => convertToSlug(kilasbara.judul) === kilasbaraId,
+  )
   // const [dataKilasbara, setDataKilasbara] = useState(null)
   // const [loading, setLoading] = useState(true)
   // const [error, setError] = useState(null)

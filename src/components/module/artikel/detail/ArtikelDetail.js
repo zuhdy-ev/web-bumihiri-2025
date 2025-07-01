@@ -45,15 +45,16 @@ export default function ArtikelDetail({
   }
 
   return (
-    <main className="w-full h-full flex flex-col items-center justify-start">
+    <main className="w-full h-full flex flex-col items-center justify-start bg-white">
       <div className="w-full mt-5 px-3 max-w-[1000px]">
         <button
-          className="cursor-pointer text-white px-5 py-1 bg-black rounded-lg text-[10px] md:text-[12px] lg:text-[15px] hover:bg-orange-500"
+          className="cursor-pointer text-white px-5 py-1 bg-primary-green rounded-lg text-[10px] md:text-[12px] lg:text-[15px] font-bold"
           onClick={handleBack}
         >
           Kembali
         </button>
       </div>
+      <div className="w-[67.5%] border-b border-[#F8BA00] my-5"></div>
       <div className="w-full h-full flex flex-col items-center justify-start">
         <div className="relative w-full max-w-[1000px] flex flex-col items-center justify-start">
           <div className="z-0 p-3 w-full h-auto aspect-video">
@@ -72,22 +73,21 @@ export default function ArtikelDetail({
           </div>
         </div>
         <div className="w-full max-w-[1000px] px-5 py-5 lg:px-20">
-          <div className="w-full mb-5">
-            <h1 className="text-[25px] md:text-[35px] font-made-tommy-bold text-orange-500">
+          <div className="w-full">
+            <h1 className="text-[25px] md:text-[35px] font-made-tommy-bold text-primary-blue text-center">
               {judul}
             </h1>
-            <p className="text-[17px]">
+            <p className="text-[17px] text-primary-blue text-center ">
               oleh <span>{kementerian}</span>
             </p>
           </div>
-          <div className="font-bold text-[17px]">🟠 {jenis}</div>
-          <div className="text-[15px]">
+          {/* <div className="font-bold text-[17px]">🟠 {jenis}</div> */}
+          <div className="text-[15px] text-primary-blue text-center">
             <p>{formatTanggal(tgl_publish)}</p> {/* Menggunakan fungsi formatTanggal */}
           </div>
         </div>
-        <div className="w-[50%] border-b border-gray-300"></div>
         <div
-          className="w-full text-[18px] max-w-[1000px] px-5 py-5 lg:pb-32 lg:px-20 text-justify text-pretty break-words"
+          className="w-full text-[18px] max-w-[1000px] px-5 py-5 lg:pb-32 lg:px-20 text-justify text-pretty break-words text-black"
           dangerouslySetInnerHTML={{ __html: deskripsi }}
         />
       </div>

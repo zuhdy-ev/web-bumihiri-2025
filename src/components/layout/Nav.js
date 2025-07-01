@@ -15,42 +15,68 @@ export default function Nav({ active }) {
       <div className="relative max-w-[1920px] w-full flex items-center justify-between">
         <div className="w-1/2 md:w-80 py-2">
           <Link href={'/'}>
-            <Image src={'/assets/Lambang Bumi Hiri 25.png'} alt="logo" width={0} height={0} className='w-[60px] md:w-[80px]'/>
+            <Image
+              src={'/assets/Lambang Bumi Hiri 25.png'}
+              alt="logo"
+              width={0}
+              height={0}
+              className="w-[60px] md:w-[80px]"
+            />
           </Link>
         </div>
         <div>
           {/* Nav Link */}
           <div className="hidden lg:block">
-            <div className="font-made-tommy-regular ml-4 flex items-center space-x-10 text-[12px] lg:text-[15px]">
+            <div className="font-made-tommy-regular flex items-center gap-5 text-[12px] lg:text-[15px]">
               <Link
                 href="/"
                 className={`${
-                  active === 'beranda' ? 'text-white border-2 border-white rounded-full' : 'text-white'
-                }  py-2 px-6`}
+                  active === 'beranda'
+                    ? 'text-white text-center border-2 border-white rounded-full'
+                    : 'text-white text-center'
+                }  py-2 px-3`}
               >
                 Beranda
               </Link>
               <Link
-                href="/profil"
+                href="/tentang-hiri"
                 className={`${
-                  active === 'profil' ? 'text-white border-2 border-white rounded-full' : 'text-white'
-                }  py-2 px-6`}
+                  active === 'hiri'
+                    ? 'text-white text-center border-2 border-white rounded-full'
+                    : 'text-white text-center'
+                }  py-2 px-3`}
               >
-                Profil
+                Tentang Hiri
               </Link>
               <Link
                 href="/artikel"
                 className={`${
-                  active === 'artikel' ? 'text-white border-2 border-white rounded-full' : 'text-white'
-                }  py-2 px-6`}
+                  active === 'artikel'
+                    ? 'text-white text-center border-2 border-white rounded-full'
+                    : 'text-white text-center'
+                }  py-2 px-3`}
               >
                 Artikel
               </Link>
               <Link
-                href="/sop"
-                className={`${active === 'sop' ? 'text-white border-2 border-white rounded-full' : 'text-white'}  py-2 px-6`}
+                href="/galeri"
+                className={`${
+                  active === 'galeri'
+                    ? 'text-white text-center border-2 border-white rounded-full'
+                    : 'text-white text-center'
+                }  py-2 px-3`}
               >
-                SOP
+                Galeri
+              </Link>
+              <Link
+                href="/profil"
+                className={`${
+                  active === 'profil'
+                    ? 'text-white text-center border-2 border-white rounded-full'
+                    : 'text-white text-center'
+                }  py-2 px-3`}
+              >
+                Bumi Hiri 2025
               </Link>
             </div>
           </div>

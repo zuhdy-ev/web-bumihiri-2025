@@ -4,7 +4,7 @@ import '../../../app/globals.css'
 import dataKilasbara from '@/data/artikelKilasbara.json'
 import { KilasbaraCard } from '@/components/element/kilasbara/page'
 import { convertToSlug } from '@/app/artikel/kilasbara/[kilasbaraId]/page'
-import { ArtikelCard } from '@/components/element/artikel/page'
+import { GaleriCard } from '@/components/element/galeri/page'
 
 const ListKilasbara = () => {
   const [dataArtikel, setDataArtikel] = useState([])
@@ -14,7 +14,7 @@ const ListKilasbara = () => {
   }, [])
 
   return (
-    <section className="w-full h-full bg-white max-w-[1920px]">
+    <section className="w-full h-full bg-white max-w-[1920px] px-5">
       <div className="w-full">
         {/* Card Container */}
         <div className="relative w-full h-full flex flex-col md:flex-row items-center justify-center gap-5">
@@ -26,7 +26,7 @@ const ListKilasbara = () => {
                 .map((item) => {
                   return (
                     <div key={item.id}>
-                      <ArtikelCard
+                      <GaleriCard
                         gambar={item.gambar}
                         judul={item.judul}
                         link={`/artikel/kajian/${convertToSlug(item.judul)}`}

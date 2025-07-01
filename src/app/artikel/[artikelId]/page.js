@@ -1,4 +1,4 @@
-import DetailKajian from './DetailKajian'
+import DetailArtikel from './DetailArtikel'
 import dataKajian from '@/data/artikelKajian.json'
 
 export const convertToSlug = (judul) => {
@@ -12,8 +12,8 @@ export const convertToSlug = (judul) => {
 }
 
 export async function generateStaticParams() {
-  const kajianIds = dataKajian.map((kajian) => convertToSlug(kajian.judul))
-  return kajianIds.map((kajianId) => ({ kajianId }))
+  const artikelIds = dataKajian.map((artikel) => convertToSlug(artikel.judul))
+  return artikelIds.map((artikelId) => ({ artikelId }))
   // const response = await fetch('https://www.be2.bemkmugm.com/api/artikels', {
   //   headers: {
   //     Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
@@ -28,5 +28,5 @@ export async function generateStaticParams() {
 }
 
 export default function Page({ params }) {
-  return <DetailKajian params={params} />
+  return <DetailArtikel params={params} />
 }

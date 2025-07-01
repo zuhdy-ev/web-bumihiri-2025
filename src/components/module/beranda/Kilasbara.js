@@ -1,10 +1,11 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { KilasbaraCard } from '@/components/element/kilasbara/page'
+// import { KilasbaraCard } from '@/components/element/kilasbara/page'
 // import axios from 'axios'
-import { convertToSlug } from '@/app/artikel/kilasbara/[kilasbaraId]/page'
+// import { convertToSlug } from '@/app/artikel/kilasbara/[kilasbaraId]/page'
 import dataKilasbara from '@/data/artikelKilasbara.json'
+import { ArtikelCard } from '@/components/element/artikel/page'
 
 const Kilasbara = () => {
   const [dataArtikel, setDataArtikel] = useState()
@@ -46,10 +47,10 @@ const Kilasbara = () => {
               const { id, judul, gambar } = item // Destruktur properti dari item
               return (
                 <div key={id}>
-                  <KilasbaraCard
+                  <ArtikelCard
                     gambar={gambar} // Masukkan properti gambar
                     judul={judul} // Masukkan judul artikel
-                    link={`/artikel/kilasbara/${convertToSlug(judul)}`} // Tautkan ke halaman detail artikel
+                    // link={`/artikel/kilasbara/${convertToSlug(judul)}`} // Tautkan ke halaman detail artikel
                   />
                 </div>
               )

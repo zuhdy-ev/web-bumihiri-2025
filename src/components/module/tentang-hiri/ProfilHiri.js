@@ -22,7 +22,7 @@ export default function ProfilHiri() {
           Luas 6.916 kilometer persegi
         </div>
         <div className="w-1/2 text-[10px] rounded md:text-[12px] lg:text-[15px] font-bold text-center bg-white text-primary-blue py-2 flex items-center justify-center px-2">
-          0°53'49.4", 127°19'01.7"
+          0°53&apos;49.4&quot;, 127°19&apos;01.7&quot;
         </div>
       </div>
     </section>

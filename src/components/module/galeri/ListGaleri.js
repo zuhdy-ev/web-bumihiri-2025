@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import '../../../app/globals.css'
 import dataKilasbara from '@/data/artikelKilasbara.json'
-import { KilasbaraCard } from '@/components/element/kilasbara/page'
-import { convertToSlug } from '@/app/artikel/kilasbara/[kilasbaraId]/page'
+// import { KilasbaraCard } from '@/components/element/kilasbara/page'
+// import { convertToSlug } from '@/app/artikel/kilasbara/[kilasbaraId]/page'
 import { GaleriCard } from '@/components/element/galeri/page'
 
 const ListKilasbara = () => {

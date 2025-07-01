@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
 
 export default function TentangHiri() {
   return (
@@ -13,13 +14,13 @@ export default function TentangHiri() {
           <div className="w-[70%] h-[1px] bg-primary-green hidden md:block"></div>
         </div>
         {/* Photo */}
-        <div>
+        <div className="w-[90%]">
           <Image
-            src={'assets/beranda/tentangHiri_foto.png'}
-            alt="hero asset"
+            src={'assets/beranda/tentangHiri_foto.svg'}
+            alt="Pulau Hiri"
             width={0}
             height={0}
-            className="w-full"
+            className="w-full object-cover drop-shadow-xl rounded border-2 border-white"
           />
         </div>
         {/* Text */}
@@ -28,9 +29,11 @@ export default function TentangHiri() {
           ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adip
         </div>
         {/* Button */}
-        <button className="px-5 py-1 rounded-full text-[10px] md:text-[12px] lg:text-[15px] bg-primary-green text-white font-bold w-fit">
-          Tentang Hiri
-        </button>
+        <Link href={`/tentang-hiri`}>
+          <button className="px-5 py-1 rounded-full text-[10px] md:text-[12px] lg:text-[15px] bg-primary-green text-white font-bold w-fit">
+            Tentang Hiri
+          </button>
+        </Link>
       </div>
     </section>
   )

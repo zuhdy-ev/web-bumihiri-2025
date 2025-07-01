@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import Link from 'next/link'
-import { ButtonProfil } from '@/components/element/umum/page'
 
 export default function SambutanKetua() {
   return (
@@ -17,21 +15,20 @@ export default function SambutanKetua() {
           {/* Photo */}
           <div className="w-fit flex items-center justify-center md:w-1/2">
             <Image
-              src={'/assets/beranda/tentang_foto.png'}
-              alt="hero asset"
+              src={'/assets/profil/tentang_foto.jpg'}
+              alt="Bumi Hiri 2025"
               width={0}
               height={0}
-              className="w-full aspect-video"
+              className="w-full aspect-video object-cover drop-shadow-xl rounded border-2"
             />
           </div>
           {/* Text & Button */}
           <div className="my-2 flex flex-col gap-5 justify-center items-center md:items-start md:w-1/2">
             <div className="px-1 py-1 text-[10px] md:text-[12px] lg:text-[15px] text-justify text-primary-blue">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.{' '}
+              KKN-PPM UGM Bumihiri merupakan tim pengabdian mahasiswa UGM yang berlokasi di
+              Kecamatan Pulau Hiri, Ternate, Maluku Utara. Kami hadir untuk mendukung pemberdayaan
+              masyarakat melalui program-program di bidang pendidikan, kesehatan, lingkungan,
+              pariwisata, ekonomi, dan pengembangan potensi lokal berbasis kearifan budaya setempat.
             </div>
           </div>
         </div>

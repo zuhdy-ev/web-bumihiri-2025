@@ -30,9 +30,8 @@ export default function Tema() {
       {/* Content */}
       <div className="px-5 md:px-28 max-w-[1440px]">
         <p className="text-white text-center text-[14px] md:text-[16px] lg:text-[19px]">
-          &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-          adip.&quot;
+          &quot;Sinergi Ekonomi Kreatif dan Pariwisata Berkelanjutan Berbasis Kearifan Lokal dan
+          Potensi Agro-Maritim dalam Mewujudkan Desa Wisata Mandiri&quot;
         </p>
       </div>
       {/* <div className="w-full px-11 py-11 max-w-7xl flex flex-col gap-10">

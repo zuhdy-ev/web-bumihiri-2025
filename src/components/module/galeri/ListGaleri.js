@@ -2,11 +2,9 @@
 import React, { useEffect, useState } from 'react'
 import '../../../app/globals.css'
 import dataKilasbara from '@/data/artikelKilasbara.json'
-// import { KilasbaraCard } from '@/components/element/kilasbara/page'
-// import { convertToSlug } from '@/app/artikel/kilasbara/[kilasbaraId]/page'
 import { GaleriCard } from '@/components/element/galeri/page'
 
-const ListKilasbara = () => {
+const ListGaleri = () => {
   const [dataArtikel, setDataArtikel] = useState([])
 
   useEffect(() => {
@@ -26,21 +24,16 @@ const ListKilasbara = () => {
                 .map((item) => {
                   return (
                     <div key={item.id}>
-                      <GaleriCard
-                        gambar={item.gambar}
-                        judul={item.judul}
-                        link={`/artikel/kajian/${convertToSlug(item.judul)}`}
-                      />
+                      <GaleriCard gambar={item.gambar} judul={item.judul} />
                     </div>
                   )
                 })}
             </div>
           </div>
-          {/* <div className="absolute w-full h-full bg-gradient-to-b from-[#125881] via-[#40A6AA] to-white z-0"></div> */}
         </div>
       </div>
     </section>
   )
 }
 
-export default ListKilasbara
+export default ListGaleri

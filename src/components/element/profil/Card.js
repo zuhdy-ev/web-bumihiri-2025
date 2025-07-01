@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-export default function Card({ gambar, judul, link }) {
+export default function Card({ gambar }) {
   const baseUrl = process.env.NEXT_PUBLIC_FILAMENT_STORAGE
   const imageUrl = gambar ? `${baseUrl}/${gambar}` : '/assets/umum/default-placeholder.png'
 

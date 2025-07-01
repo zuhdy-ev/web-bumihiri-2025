@@ -7,7 +7,7 @@ export default function Card({ gambar, judul, link }) {
   const imageUrl = gambar ? `${baseUrl}/${gambar}` : '/assets/umum/default-placeholder.png'
 
   return (
-    <div className="relative w-full min-h-[320px] h-[90vw] max-h-[450px] bg-white text-black rounded-lg overflow-hidden drop-shadow-lg max-w-[500px]">
+    <div className="relative w-full min-h-[300px] h-[90vw] max-h-[450px] bg-white text-black rounded-lg overflow-hidden drop-shadow-lg max-w-[500px]">
       <div className="">
         <Image
           src={imageUrl}

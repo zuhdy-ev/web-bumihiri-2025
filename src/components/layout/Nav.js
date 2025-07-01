@@ -101,9 +101,10 @@ export default function Nav({ active }) {
         <div className="flex flex-col p-5 gap-5 font-made-tommy-regular text-[12px]">
           {[
             { href: '/', label: 'Beranda', key: 'beranda' },
-            { href: '/profil', label: 'Profil', key: 'profil' },
+            { href: '/tentang-hiri', label: 'Tentang Hiri', key: 'hiri' },
             { href: '/artikel', label: 'Artikel', key: 'artikel' },
-            { href: '/sop', label: 'SOP', key: 'sop' },
+            { href: '/galeri', label: 'Galeri', key: 'galeri' },
+            { href: '/profil', label: 'Bumi Hiri 2025', key: 'profil' },
           ].map(({ href, label, key }) => (
             <Link
               key={key}

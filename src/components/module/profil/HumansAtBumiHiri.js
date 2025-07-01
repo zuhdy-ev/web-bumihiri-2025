@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react'
 import '../../../app/globals.css'
 import dataKilasbara from '@/data/artikelKilasbara.json'
-// import { convertToSlug } from '@/app/artikel/kilasbara/[kilasbaraId]/page'
 import { HumansCard } from '@/components/element/profil/page'
 
 const HumansAtBumiHiri = () => {
@@ -30,17 +29,12 @@ const HumansAtBumiHiri = () => {
                 .map((item) => {
                   return (
                     <div key={item.id}>
-                      <HumansCard
-                        gambar={item.gambar}
-                        judul={item.judul}
-                        link={`/artikel/kajian/${convertToSlug(item.judul)}`}
-                      />
+                      <HumansCard gambar={item.gambar} judul={item.judul} />
                     </div>
                   )
                 })}
             </div>
           </div>
-          {/* <div className="absolute w-full h-full bg-gradient-to-b from-[#125881] via-[#40A6AA] to-white z-0"></div> */}
         </div>
       </div>
     </section>

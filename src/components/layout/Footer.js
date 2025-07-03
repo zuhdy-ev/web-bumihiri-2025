@@ -14,14 +14,14 @@ export default function Footer() {
           className="w-fit"
         />
       </div>
-      <div className="w-full max-w-[1440px] h-full absolute z-10 flex flex-col md:flex-row p-5 pl-28 gap-5 items-center justify-center">
+      <div className="w-full max-w-[1440px] h-full absolute z-10 flex flex-col md:flex-row p-5 pl-28 gap-5 items-center justify-center lg:-translate-y-5">
         <div className="w-full md:w-1/2">
           <Image
             src={'/assets/footer/Logo & Lambang Bumi Hiri 25.svg'}
             alt="Bumi Hiri 2025"
             width={0}
             height={0}
-            className="w-32 md:w-[25vw] max-w-[350px] h-auto object-contain"
+            className="w-32 md:w-[23vw] max-w-[350px] h-auto object-contain"
           />
         </div>
         <div className="w-full md:w-1/2  flex flex-col gap-2 text-[10px] items-start justify-center md:items-end md:mr-10">
@@ -31,7 +31,7 @@ export default function Footer() {
               alt="Ig Bumi Hiri 2025"
               width={0}
               height={0}
-              className="w-[15px] md:w-[20px]"
+              className="w-[15px] md:w-[17px]"
             />
             <div className="text-[10px] lg:text-[12px]">@bumihiri</div>
           </div>
@@ -41,7 +41,7 @@ export default function Footer() {
               alt="TikTok Bumi Hiri 2025"
               width={0}
               height={0}
-              className="w-[15px] md:w-[20px]"
+              className="w-[15px] md:w-[17px]"
             />
             <div className="text-[10px] lg:text-[12px]">@bumihiri</div>
           </div>
@@ -51,7 +51,7 @@ export default function Footer() {
               alt="Gmail Bumi Hiri 2025"
               width={0}
               height={0}
-              className="w-[15px] md:w-[20px]"
+              className="w-[15px] md:w-[17px]"
             />
             <div className="text-[10px] lg:text-[12px]">hirinesia2025@gmail.com</div>
           </div>

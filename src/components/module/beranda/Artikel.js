@@ -39,7 +39,8 @@ export default function Artikel() {
             {/* Card */}
             <div className="w-full">
               <div className="w-full flex flex-wrap items-center justify-center gap-5 my-5">
-                {dataArtikel
+                <div className="text-black">Artikel belum tersedia</div>
+                {/* {dataArtikel
                   ?.sort((a, b) => new Date(b.tgl_publish) - new Date(a.tgl_publish))
                   .slice(0, 4)
                   .map((item) => {
@@ -53,12 +54,14 @@ export default function Artikel() {
                         />
                       </div>
                     )
-                  })}
+                  })} */}
               </div>
               <div className="w-full flex items-center justify-center underline py-3">
-                <button className="px-5 py-1 rounded-full text-[10px] md:text-[12px] lg:text-[15px] bg-white text-primary-green font-bold w-fit">
-                  Artikel Lainnya
-                </button>
+                <Link href={'/artikel'}>
+                  <button className="px-5 py-1 rounded-full text-[10px] md:text-[12px] lg:text-[15px] bg-white text-primary-green font-bold w-fit">
+                    Artikel Lainnya
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

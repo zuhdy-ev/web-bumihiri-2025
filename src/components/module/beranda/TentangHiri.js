@@ -24,9 +24,10 @@ export default function TentangHiri() {
           />
         </div>
         {/* Text */}
-        <div className="text-[10px] md:text-[12px] lg:text-[15px] text-center text-primary-green">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adip
+        <div className="text-[10px] md:text-[12px] lg:text-[15px] text-center text-primary-green md:px-10">
+          Pulau Hiri adalah sebuah pulau kecil yang terletak di sebelah utara Pulau Ternate, Maluku
+          Utara. Pulau ini dikenal dengan keindahan alamnya yang masih alami, perairan yang jernih,
+          dan panorama Gunung Gamalama yang memukau dari kejauhan.
         </div>
         {/* Button */}
         <Link href={`/tentang-hiri`}>

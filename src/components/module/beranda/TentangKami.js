@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function SambutanKetua() {
   return (
-    <section className="relative w-full bg-primary-color flex flex-col items-center min-h-[70vh] lg:min-h-0 max-h-[500px] justify-center lg:justify-start z-0">
+    <section className="relative w-full flex flex-col items-center min-h-[70vh] lg:min-h-0 max-h-[500px] justify-center lg:justify-start z-0">
       {/* Background */}
       <div className="w-full h-full absolute">
         <Image

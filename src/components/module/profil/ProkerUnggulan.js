@@ -15,22 +15,50 @@ export default function Galeri() {
         {/* Carousel Photos */}
         <div className="w-full h-full flex items-center py-5 md:px-10 lg:px-20 overflow-x-auto scrollbar-custom">
           <Image
-            src={'/assets/profil/prokerUnggulan_contoh.png'}
-            alt="proker unggulan contoh"
+            src={'/assets/profil/proker-unggulan/1.svg'}
+            alt="proker unggulan"
             width={0}
             height={0}
             className="w-full mx-2"
           />
           <Image
-            src={'/assets/profil/prokerUnggulan_contoh.png'}
-            alt="proker unggulan contoh"
+            src={'/assets/profil/proker-unggulan/2.svg'}
+            alt="proker unggulan"
             width={0}
             height={0}
             className="w-full mx-2"
           />
           <Image
-            src={'/assets/profil/prokerUnggulan_contoh.png'}
-            alt="proker unggulan contoh"
+            src={'/assets/profil/proker-unggulan/3.svg'}
+            alt="proker unggulan"
+            width={0}
+            height={0}
+            className="w-full mx-2"
+          />
+          <Image
+            src={'/assets/profil/proker-unggulan/4.svg'}
+            alt="proker unggulan"
+            width={0}
+            height={0}
+            className="w-full mx-2"
+          />
+          <Image
+            src={'/assets/profil/proker-unggulan/5.svg'}
+            alt="proker unggulan"
+            width={0}
+            height={0}
+            className="w-full mx-2"
+          />
+          <Image
+            src={'/assets/profil/proker-unggulan/6.svg'}
+            alt="proker unggulan"
+            width={0}
+            height={0}
+            className="w-full mx-2"
+          />
+          <Image
+            src={'/assets/profil/proker-unggulan/7.svg'}
+            alt="proker unggulan"
             width={0}
             height={0}
             className="w-full mx-2"

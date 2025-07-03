@@ -19,7 +19,8 @@ const ListGaleri = () => {
           {/* Card */}
           <div className="w-full z-10 mt-10 mb-32">
             <div className="w-full flex flex-wrap items-center justify-center gap-5 my-5">
-              {dataArtikel
+              <div className="text-black">Dokumentasi belum tersedia</div>
+              {/* {dataArtikel
                 ?.sort((a, b) => new Date(b.tgl_publish) - new Date(a.tgl_publish))
                 .map((item) => {
                   return (
@@ -27,7 +28,7 @@ const ListGaleri = () => {
                       <GaleriCard gambar={item.gambar} judul={item.judul} />
                     </div>
                   )
-                })}
+                })} */}
             </div>
           </div>
         </div>

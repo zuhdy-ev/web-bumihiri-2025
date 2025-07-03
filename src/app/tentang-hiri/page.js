@@ -15,8 +15,8 @@ export default function TentangHiri() {
       <HeroHiri />
       <ProfilHiri />
       <KelurahanHiri />
-      <WisataHiri />
-      <KulinerHiri />
+      {/* <WisataHiri /> */}
+      {/* <KulinerHiri /> */}
     </main>
   )
 }

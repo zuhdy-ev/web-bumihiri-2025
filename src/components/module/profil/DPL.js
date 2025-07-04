@@ -22,7 +22,7 @@ export default function DPL() {
           {/* Photo */}
           <div className="w-fit h-fit flex items-center justify-center md:w-1/2">
             <Image
-              src={'/assets/profil/dpl_foto.png'}
+              src={'/assets/profil/profil/dpl.svg'}
               alt="foto dpl"
               width={0}
               height={0}

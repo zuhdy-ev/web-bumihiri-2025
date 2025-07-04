@@ -17,8 +17,8 @@ export default function Profil() {
       <TentangKamiProfil />
       <Tema />
       <ProkerUnggulan />
-      {/* <DPL />
-      <HumansAtBumiHiri /> */}
+      <DPL />
+      <HumansAtBumiHiri />
     </main>
   )
 }

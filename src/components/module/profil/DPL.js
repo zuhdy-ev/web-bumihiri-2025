@@ -20,7 +20,7 @@ export default function DPL() {
       <div className="w-full h-full p-5 md:py-10 max-w-[1440px] z-20 flex flex-col">
         <div className="w-full h-full flex items-center md:items-start flex-col md:flex-row max-w-[1440px] lg:px-20 md:gap-5">
           {/* Photo */}
-          <div className="w-fit h-fit flex items-center justify-center md:w-1/2">
+          <div className="w-fit h-fit flex items-center justify-center md:justify-end md:w-1/2">
             <Image
               src={'/assets/profil/profil/dpl.svg'}
               alt="foto dpl"
@@ -34,7 +34,7 @@ export default function DPL() {
             <div className="px-1 py-1 text-[14px] md:text-[16px] lg:text-[19px] drop-shadow font-bold">
               DPL BUMI HIRI 2025
             </div>
-            <div className="px-1 py-1 text-[20px] md:text-[22px] lg:text-[25px] drop-shadow font-bold text-center md:text-start">
+            <div className="px-1 py-1 text-[20px] md:text-[22px] lg:text-[30px] drop-shadow font-bold text-center md:text-start">
               Sumaryono Sri Noto, S.Psi, Psikolog
             </div>
           </div>

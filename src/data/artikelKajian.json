@@ -2,10 +2,9 @@
   {
     "id": 1,
     "judul": "Puluhan Mahasiswa UGM Laksanakan KKN di Pulau Hiri Kota Ternate",
-    "kategori": "",
+    "kategori": "berita",
     "sumber": "ekternal",
     "tgl_publish": "2024-06-18",
-    "dirjen": null,
     "deskripsi": "",
     "kementrian": "indotimur.com",
     "gambar": "/assets/artikel/fotoArtikel_001.jpeg",
@@ -14,13 +13,23 @@
   {
     "id": 2,
     "judul": "Pemkot Ternate Terima 30 Peserta KKN-PPM UGM Tahun 2025",
-    "kategori": "",
+    "kategori": "berita",
     "sumber": "ekternal",
-    "tgl_publish": "2024-06-18",
-    "dirjen": null,
+    "tgl_publish": "2024-06-25",
     "deskripsi": "",
     "kementrian": "ternatehariini.com",
     "gambar": "/assets/artikel/fotoArtikel_002.jpg",
     "link": "https://www.ternatehariini.com/2025/06/25/pemkot-ternate-terima-30-peserta-peserta-kkn-ppm-ugm-tahun-2025/"
+  }
+  {
+    "id": 3,
+    "judul": "KKN: Mahasiswa UGM Bawa 4 Program Sektor Pertanian di Kecamatan Hiri, Ternate",
+    "kategori": "berita",
+    "sumber": "ekternal",
+    "tgl_publish": "2024-06-26",
+    "deskripsi": "",
+    "kementrian": "malutpost.com",
+    "gambar": "/assets/artikel/fotoArtikel_003.jpg",
+    "link": "https://www.malutpost.com/2025/06/26/kkn-mahasiswa-ugm-bawa-4-program-sektor-pertanian-di-kecamatan-hiri-ternate/"
   }
 ]

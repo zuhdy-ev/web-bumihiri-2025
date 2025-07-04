@@ -21,8 +21,8 @@ const ListKajian = () => {
         <div className="relative w-full h-full flex flex-col md:flex-row items-center justify-center gap-5 px-5">
           <div className="w-full z-10 mt-5 mb-32">
             <div className="w-full flex flex-wrap items-center justify-center gap-5 my-5">
-              <div className="text-black">Artikel belum tersedia</div>
-              {/* {dataArtikel
+              {/* <div className="text-black">Artikel belum tersedia</div> */}
+              {dataArtikel
                 ?.sort((a, b) => new Date(b.tgl_publish) - new Date(a.tgl_publish))
                 .map((item) => {
                   return (
@@ -31,11 +31,12 @@ const ListKajian = () => {
                         gambar={item.gambar}
                         judul={item.judul}
                         kementerian={item.kementerian}
-                        link={`/artikel/kajian/${convertToSlug(item.judul)}`}
+                        // link={`/artikel/kajian/${convertToSlug(item.judul)}`}
+                        link={item.link || `/artikel/kajian/${convertToSlug(item.judul)}`}
                       />
                     </div>
                   )
-                })} */}
+                })}
             </div>
           </div>
         </div>

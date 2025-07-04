@@ -4,13 +4,13 @@ import Link from 'next/link'
 
 export default function Card({ gambar, judul, link }) {
   const baseUrl = process.env.NEXT_PUBLIC_FILAMENT_STORAGE
-  const imageUrl = gambar ? `${baseUrl}/${gambar}` : '/assets/umum/default-placeholder.png'
+  // const imageUrl = gambar ? `${baseUrl}/${gambar}` : '/assets/umum/default-placeholder.png'
 
   return (
     <div className="relative w-full min-h-[300px] h-[90vw] max-h-[450px] bg-white text-black rounded-lg overflow-hidden drop-shadow-lg max-w-[500px]">
-      <div className="">
+      <div className="aspect-video">
         <Image
-          src={imageUrl}
+          src={gambar}
           alt="Foto Artikel"
           width={0}
           height={0}

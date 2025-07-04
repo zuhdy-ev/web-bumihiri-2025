@@ -39,22 +39,22 @@ export default function Artikel() {
             {/* Card */}
             <div className="w-full">
               <div className="w-full flex flex-wrap items-center justify-center gap-5 my-5">
-                <div className="text-black">Artikel belum tersedia</div>
-                {/* {dataArtikel
+                {/* <div className="text-black">Artikel belum tersedia</div> */}
+                {dataArtikel
                   ?.sort((a, b) => new Date(b.tgl_publish) - new Date(a.tgl_publish))
-                  .slice(0, 4)
                   .map((item) => {
                     return (
                       <div key={item.id}>
                         <ArtikelCard
-                          gambar={item.gambar} // Masukkan properti gambar
-                          judul={item.judul} // Masukkan judul artikel
-                          // link={`/artikel/kajian/${convertToSlug(item.judul)}`} // Tautkan ke halaman detail artikel
-                          link={`/artikel/kajian/`} // Tautkan ke halaman detail artikel
+                          gambar={item.gambar}
+                          judul={item.judul}
+                          kementerian={item.kementerian}
+                          // link={`/artikel/kajian/${convertToSlug(item.judul)}`}
+                          link={item.link || `/artikel/kajian/${convertToSlug(item.judul)}`}
                         />
                       </div>
                     )
-                  })} */}
+                  })}
               </div>
               <div className="w-full flex items-center justify-center underline py-3">
                 <Link href={'/artikel'}>

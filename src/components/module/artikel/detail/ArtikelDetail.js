@@ -11,7 +11,7 @@ export default function ArtikelDetail({
   deskripsi,
 }) {
   const baseUrl = process.env.NEXT_PUBLIC_FILAMENT_STORAGE
-  const imageUrl = gambar ? `${baseUrl}/${gambar}` : '/assets/umum/default-placeholder-center.png'
+  // const imageUrl = gambar ? `${baseUrl}/${gambar}` : '/assets/umum/default-placeholder-center.png'
 
   const handleBack = () => {
     window.history.back()
@@ -59,7 +59,7 @@ export default function ArtikelDetail({
         <div className="relative w-full max-w-[1000px] flex flex-col items-center justify-start">
           <div className="z-0 p-3 w-full h-auto aspect-video">
             <Image
-              src={imageUrl}
+              src={gambar}
               alt={judul}
               width={0}
               height={0}

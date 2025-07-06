@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="w-full max-w-[1440px] h-full absolute z-10 flex flex-col md:flex-row p-5 pl-28 gap-5 items-center justify-center lg:-translate-y-5">
         <div className="w-full md:w-1/2">
           <Image
-            src={'/assets/footer/Logo & Lambang Bumi Hiri 25.svg'}
+            src={'/assets/footer/logo ugm-kkn-bumihiri.svg'}
             alt="Bumi Hiri 2025"
             width={0}
             height={0}

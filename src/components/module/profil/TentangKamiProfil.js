@@ -25,7 +25,7 @@ export default function SambutanKetua() {
           {/* Text & Button */}
           <div className="my-2 flex flex-col gap-5 justify-center items-center md:items-start md:w-1/2">
             <div className="px-1 py-1 text-[10px] md:text-[12px] lg:text-[15px] text-justify text-primary-blue">
-              KKN-PPM UGM Bumihiri merupakan tim pengabdian mahasiswa UGM yang berlokasi di
+              KKN-PPM UGM Bumi Hiri 2025 merupakan tim pengabdian mahasiswa UGM yang berlokasi di
               Kecamatan Pulau Hiri, Ternate, Maluku Utara. Kami hadir untuk mendukung pemberdayaan
               masyarakat melalui program-program di bidang pendidikan, kesehatan, lingkungan,
               pariwisata, ekonomi, dan pengembangan potensi lokal berbasis kearifan budaya setempat.

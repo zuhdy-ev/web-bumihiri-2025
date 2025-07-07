@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from '@/components/layout/Nav'
 import { HeroGaleri, ListGaleri } from '@/components/module/galeri/page'
+import Footer from '@/components/layout/Footer'
 
 export default function Artikel() {
   return (
@@ -8,6 +9,7 @@ export default function Artikel() {
       <Nav active="galeri" />
       <HeroGaleri />
       <ListGaleri />
+      <Footer active="" />
     </main>
   )
 }

@@ -2,9 +2,15 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Footer() {
+export default function Footer({ active }) {
   return (
-    <footer className="relative w-full bottom-0 py-5 px-5 h-[35vh] max-h-[300px] flex flex-col items-center justify-center bg-gradient-to-r from-[#306600] via-[#5CA41C] to-[#306600] z-50 overflow-hidden">
+    <footer
+      className={`relative w-full bottom-0 py-5 px-5 h-[35vh] max-h-[300px] flex flex-col items-center justify-center bg-gradient-to-r z-50 overflow-hidden ${
+        active === 'hiri-fest-2025'
+          ? 'from-[#C87C00] via-[#FFDA46] to-[#C87C00]'
+          : 'from-[#306600] via-[#5CA41C] to-[#306600]'
+      }`}
+    >
       <div className="w-full relative right-0 z-0">
         <Image
           src={'/assets/footer/footer_asset.svg'}

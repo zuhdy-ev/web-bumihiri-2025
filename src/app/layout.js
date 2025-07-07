@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       </Head>
       <body className="font-made-tommy bg-white overflow-x-hidden">
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   )

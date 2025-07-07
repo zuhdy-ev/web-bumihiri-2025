@@ -7,6 +7,7 @@ import {
   WisataHiri,
   KulinerHiri,
 } from '@/components/module/tentang-hiri/page'
+import Footer from '@/components/layout/Footer'
 
 export default function TentangHiri() {
   return (
@@ -17,6 +18,7 @@ export default function TentangHiri() {
       <KelurahanHiri />
       {/* <WisataHiri /> */}
       {/* <KulinerHiri /> */}
+      <Footer active="" />
     </main>
   )
 }

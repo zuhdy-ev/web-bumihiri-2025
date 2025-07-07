@@ -7,6 +7,7 @@ import '../../app/globals.css'
 import dataKajian from '@/data/artikelKajian.json'
 import { convertToSlug } from '@/app/artikel/[artikelId]/page'
 import { ArtikelCard } from '@/components/element/artikel/page'
+import Footer from '@/components/layout/Footer'
 
 const ListKajian = () => {
   const [dataArtikel, setDataArtikel] = useState([])
@@ -52,6 +53,7 @@ export default function Artikel() {
       <HeroArtikel />
       {/* <ListArtikel /> */}
       <ListKajian />
+      <Footer active="" />
     </main>
   )
 }

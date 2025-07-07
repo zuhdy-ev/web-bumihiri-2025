@@ -34,7 +34,9 @@ export default function Nav({ active }) {
 
   return (
     <nav
-      className={`fixed w-full top-0 px-5 py-1 md:px-20 md:py-1 flex items-center justify-center bg-primary-green z-50 transition-transform duration-500 ease-in-out ${
+      className={`fixed w-full top-0 px-5 py-1 md:px-20 md:py-1 flex items-center justify-center ${
+        active === 'hiri-fest-2025' ? 'bg-[#C87C00]' : 'bg-primary-green'
+      } z-50 transition-transform duration-500 ease-in-out ${
         showNav ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
@@ -59,6 +61,7 @@ export default function Nav({ active }) {
                 { href: '/tentang-hiri', label: 'Tentang Hiri', key: 'hiri' },
                 { href: '/artikel', label: 'Artikel', key: 'artikel' },
                 { href: '/galeri', label: 'Galeri', key: 'galeri' },
+                { href: '/hiri-fest-2025', label: 'HIRI FEST 2025', key: 'hiri-fest-2025' },
                 { href: '/profil', label: 'Bumi Hiri 2025', key: 'profil' },
               ].map(({ href, label, key }) => (
                 <Link
@@ -94,8 +97,10 @@ export default function Nav({ active }) {
       </div>
       {/* Responsive Menu */}
       <div
-        className={`lg:hidden absolute w-full top-[60px] md:top-[73px] transition-max-height bg-primary-green bg-opacity-90 rounded-b-lg duration-1000 ease-in-out overflow-hidden ${
-          isClick ? 'max-h-screen' : 'max-h-0 '
+        className={`lg:hidden absolute w-full top-[60px] md:top-[73px] transition-max-height ${
+          active === 'hiri-fest-2025' ? 'bg-[#C87C00]' : 'bg-primary-green bg-opacity-90'
+        } rounded-b-lg duration-1000 ease-in-out overflow-hidden ${
+          isClick ? 'max-h-screen' : 'max-h-0'
         }`}
       >
         <div className="flex flex-col p-5 gap-5 font-made-tommy-regular text-[12px]">
@@ -104,6 +109,7 @@ export default function Nav({ active }) {
             { href: '/tentang-hiri', label: 'Tentang Hiri', key: 'hiri' },
             { href: '/artikel', label: 'Artikel', key: 'artikel' },
             { href: '/galeri', label: 'Galeri', key: 'galeri' },
+            { href: '/hiri-fest-2025', label: 'Hiri Fest 2025', key: 'hiri-fest-2025' },
             { href: '/profil', label: 'Bumi Hiri 2025', key: 'profil' },
           ].map(({ href, label, key }) => (
             <Link

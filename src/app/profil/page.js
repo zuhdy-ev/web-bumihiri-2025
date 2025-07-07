@@ -8,6 +8,7 @@ import {
   DPL,
   HumansAtBumiHiri,
 } from '@/components/module/profil/page'
+import Footer from '@/components/layout/Footer'
 
 export default function Profil() {
   return (
@@ -19,6 +20,7 @@ export default function Profil() {
       <ProkerUnggulan />
       <DPL />
       <HumansAtBumiHiri />
+      <Footer active="" />
     </main>
   )
 }

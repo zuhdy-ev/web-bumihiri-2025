@@ -81,7 +81,7 @@ export default function FunRun() {
             {/* Button */}
             <button className="mt-2 px-6 py-2 bg-[#F2B705] text-white font-semibold rounded-full shadow-md w-fit hover:brightness-110 transition border-2 border-white">
               <Link href={`https://bit.ly/JelajahBumiHiri2025`} target="_blank">
-                Daftar Fun Run
+                Daftar HiriXplore Run
               </Link>
             </button>
           </div>

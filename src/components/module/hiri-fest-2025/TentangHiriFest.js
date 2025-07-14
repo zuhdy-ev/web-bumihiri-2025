@@ -12,7 +12,7 @@ const TentangHiriFest = () => {
     'Hiri Fest 2025 adalah festival budaya dan kuliner yang diselenggarakan oleh mahasiswa KKN-PPM UGM di Pulau Hiri, Ternate. Mengusung tema “Bakudapa di Hiri: Pesta Rasa dan Budaya”, festival ini menjadi wadah pertemuan dan perayaan kekayaan tradisi, seni, dan kuliner khas dari seluruh kelurahan di Pulau Hiri. Lewat rangkaian acara seperti fun run, pameran kuliner, dan pertunjukan budaya, Hiri Fest 2025 bertujuan memperkenalkan, melestarikan, dan mengembangkan potensi lokal sebagai bagian dari pariwisata berbasis budaya.'
 
   return (
-    <section className="w-full h-full bg-gradient-to-r from-[#DB8A05] to-[#FFDA46] max-w-[1920px] px-5 py-10 flex items-center justify-center">
+    <section className="w-full h-full bg-gradient-to-r from-[#DB8A05] to-[#FFDA46] px-5 py-10 flex items-center justify-center">
       <div className="w-full max-w-5xl text-white text-center">
         <h2 className="text-2xl md:text-4xl italic mb-5">
           WHAT IS <span className="font-bold">HIRI FEST 2025?</span>

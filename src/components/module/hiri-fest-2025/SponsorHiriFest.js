@@ -1,0 +1,26 @@
+import React from 'react'
+import Image from 'next/image'
+
+export default function SponsorHiriFest() {
+  return (
+    <section className="w-full h-1/2 bg-white text-black flex flex-col items-center justify-center p-5 md:py-10 gap-5">
+      <h2 className="text-center text-black text-xl md:text-2xl font-bold mb-8">DIDUKUNG OLEH</h2>
+      <div className="w-fit flex flex-col items-center justify-center lg:flex-row gap-5">
+        <Image
+          src={'/assets/beranda/sponsor_pertamina.png'}
+          alt="Ternate Sport Tourism"
+          width={50}
+          height={0}
+          className={'w-full max-h-[960px]'}
+        />
+        <Image
+          src={'/assets/beranda/sponsor_batikAqilah.svg'}
+          alt="Batik Aqilah"
+          width={0}
+          height={0}
+          className={'w-[200px] max-h-[960px]'}
+        />
+      </div>
+    </section>
+  )
+}

@@ -45,9 +45,9 @@ export default function FunRun() {
 
             {/* Box Section */}
             <div className="flex flex-col md:flex-row gap-4 w-full">
-              {/* 10K Image */}
+              {/* 10K Image
               <div className="w-full md:w-fit self-start flex justify-center items-center">
-                {/* Mobile version */}
+                Mobile version
                 <Image
                   src="/assets/hiri-fest-2025/funrun/10k-phone.svg"
                   alt="10K Mobile"
@@ -55,7 +55,7 @@ export default function FunRun() {
                   height={100}
                   className="w-full h-auto block md:hidden"
                 />
-                {/* MD+ version */}
+                MD+ version
                 <Image
                   src="/assets/hiri-fest-2025/funrun/10k.svg"
                   alt="10K"
@@ -63,16 +63,13 @@ export default function FunRun() {
                   height={150}
                   className="w-[150px] h-auto hidden md:block"
                 />
-              </div>
+              </div> */}
 
               {/* Detail Box */}
               <div className="border-2 border-[#F2B705] rounded-md p-4 flex-1">
                 <ul className="text-sm list-disc pl-4">
-                  <li>
-                    <span className="font-semibold">Start/Finish:</span> Pelabuhan Togolobe (07.00
-                    WIT - )
-                  </li>
-                  <li>EG 200M</li>
+                  <li>Start/Finish: Pelabuhan Togolobe</li>
+                  <li>10K | EG 200M</li>
                   <li>Melewati 3 Spot Wisata: Majiu Majiko, Gurabala, dan Baru Ma Adu</li>
                   <li>
                     Melewati 6 Kelurahan: Kel. Togolobe, Kel. Mado, Kel. Faudu, Kel. Tomajiko, Kel.

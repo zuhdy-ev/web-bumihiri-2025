@@ -5,6 +5,8 @@ import {
   TentangHiriFest,
   ExpoHiri,
   FunRun,
+  KolaboratorHiriFest,
+  SponsorHiriFest,
   Narahubung,
 } from '@/components/module/hiri-fest-2025/page'
 import Footer from '@/components/layout/Footer'
@@ -17,6 +19,8 @@ export default function HiriFest2025() {
       <TentangHiriFest />
       <ExpoHiri />
       <FunRun />
+      <KolaboratorHiriFest />
+      <SponsorHiriFest />
       <Narahubung />
       <Footer active="hiri-fest-2025" />
     </main>

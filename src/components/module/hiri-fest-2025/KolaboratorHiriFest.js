@@ -13,14 +13,14 @@ export default function KolaboratorHiriFest() {
           alt="Ternate Sport Tourism"
           width={0}
           height={0}
-          className={'w-[70%] md:w-[40%] max-h-[200px]'}
+          className={'w-[70%] md:w-[40%] max-h-[150px]'}
         />
         <Image
           src={'/assets/hiri-fest-2025/kolaborator/ternate-berlari.svg'}
           alt="Ternate Berlari"
           width={0}
           height={0}
-          className={'w-[70%] md:w-[40%] max-h-[200px]'}
+          className={'w-[70%] md:w-[40%] max-h-[150px]'}
         />
       </div>
     </section>

@@ -18,7 +18,7 @@ export default function Sponsor() {
           alt="Batik Aqilah"
           width={0}
           height={0}
-          className={'w-[170px] max-h-[960px]'}
+          className={'w-[150px] max-h-[960px]'}
         />
         <Image
           src={'/assets/beranda/sponsor_medion.jpeg'}

@@ -17,19 +17,16 @@ export default function Nav({ active }) {
       const currentScrollY = window.scrollY
 
       if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        setShowNav(false) // Scroll ke bawah
+        setShowNav(false)
       } else {
-        setShowNav(true) // Scroll ke atas
+        setShowNav(true)
       }
 
       setLastScrollY(currentScrollY)
     }
 
     window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [lastScrollY])
 
   return (
@@ -41,6 +38,7 @@ export default function Nav({ active }) {
       }`}
     >
       <div className="relative max-w-[1920px] w-full flex items-center justify-between">
+        {/* Logo */}
         <div className="w-1/2 md:w-80 py-2">
           <Link href={'/'}>
             <Image
@@ -52,8 +50,9 @@ export default function Nav({ active }) {
             />
           </Link>
         </div>
+
+        {/* Desktop Nav */}
         <div>
-          {/* Nav Link */}
           <div className="hidden lg:block">
             <div className="font-made-tommy-regular flex items-center gap-5 text-[12px] lg:text-[15px]">
               {[
@@ -63,22 +62,37 @@ export default function Nav({ active }) {
                 { href: '/galeri', label: 'Galeri', key: 'galeri' },
                 { href: '/hiri-fest-2025', label: 'HIRI FEST 2025', key: 'hiri-fest-2025' },
                 { href: '/profil', label: 'Bumi Hiri 2025', key: 'profil' },
-              ].map(({ href, label, key }) => (
-                <Link
-                  key={key}
-                  href={href}
-                  className={`${
-                    active === key
-                      ? 'text-white text-center border-2 border-white rounded-full'
-                      : 'text-white text-center'
-                  } py-2 px-3`}
-                >
-                  {label}
-                </Link>
-              ))}
+              ].map(({ href, label, key }) =>
+                key === 'hiri-fest-2025' ? (
+                  <Link key={key} href={href} className="p-[3px]">
+                    <Image
+                      src="/assets/nav/logo-hiri-fest-2025.svg"
+                      alt="HIRI FEST 2025"
+                      width={100}
+                      height={35}
+                      className={`h-auto object-contain ${
+                        active === key ? 'border-2 border-white rounded-full px-3 py-2' : ''
+                      }`}
+                    />
+                  </Link>
+                ) : (
+                  <Link
+                    key={key}
+                    href={href}
+                    className={`${
+                      active === key
+                        ? 'text-white text-center border-2 border-white rounded-full'
+                        : 'text-white text-center'
+                    } py-2 px-3`}
+                  >
+                    {label}
+                  </Link>
+                ),
+              )}
             </div>
           </div>
-          {/* Responsive Toggle */}
+
+          {/* Mobile Toggle */}
           <div className="lg:hidden flex items-center">
             <button
               className="inline-flex w-auto items-center justify-center p-2 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -95,7 +109,8 @@ export default function Nav({ active }) {
           </div>
         </div>
       </div>
-      {/* Responsive Menu */}
+
+      {/* Mobile Menu */}
       <div
         className={`lg:hidden absolute w-full top-[60px] md:top-[73px] transition-max-height ${
           active === 'hiri-fest-2025' ? 'bg-[#C87C00]' : 'bg-primary-green bg-opacity-90'
@@ -109,19 +124,33 @@ export default function Nav({ active }) {
             { href: '/tentang-hiri', label: 'Tentang Hiri', key: 'hiri' },
             { href: '/artikel', label: 'Artikel', key: 'artikel' },
             { href: '/galeri', label: 'Galeri', key: 'galeri' },
-            { href: '/hiri-fest-2025', label: 'Hiri Fest 2025', key: 'hiri-fest-2025' },
+            { href: '/hiri-fest-2025', label: 'HIRI FEST 2025', key: 'hiri-fest-2025' },
             { href: '/profil', label: 'Bumi Hiri 2025', key: 'profil' },
-          ].map(({ href, label, key }) => (
-            <Link
-              key={key}
-              href={href}
-              className={`${
-                active === key ? 'text-white border-2 border-white rounded-full' : 'text-white'
-              } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
-            >
-              {label}
-            </Link>
-          ))}
+          ].map(({ href, label, key }) =>
+            key === 'hiri-fest-2025' ? (
+              <Link key={key} href={href} className="block text-center p-[3px]">
+                <Image
+                  src="/assets/nav/logo-hiri-fest-2025.svg"
+                  alt="HIRI FEST 2025"
+                  width={80}
+                  height={15}
+                  className={`mx-auto h-auto object-contain ${
+                    active === key ? 'border-2 border-white rounded-full' : ''
+                  }`}
+                />
+              </Link>
+            ) : (
+              <Link
+                key={key}
+                href={href}
+                className={`${
+                  active === key ? 'text-white border-2 border-white rounded-full' : 'text-white'
+                } block text-center rounded-lg p-2 transition duration-150 ease-in-out`}
+              >
+                {label}
+              </Link>
+            ),
+          )}
         </div>
       </div>
     </nav>

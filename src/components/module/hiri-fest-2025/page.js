@@ -1,2 +1,5 @@
 export { default as HeroHiriFest } from './HeroHiriFest'
-export { default as ListHiriFest } from './ListHiriFest'
+export { default as TentangHiriFest } from './TentangHiriFest'
+export { default as ExpoHiri } from './ExpoHiri'
+export { default as FunRun } from './FunRun'
+export { default as Narahubung } from './Narahubung'

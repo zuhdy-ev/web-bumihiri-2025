@@ -135,7 +135,7 @@ export default function Nav({ active }) {
                   width={80}
                   height={15}
                   className={`mx-auto h-auto object-contain ${
-                    active === key ? 'border-2 border-white rounded-full' : ''
+                    active === key ? 'border-2 border-white rounded-full px-3 py-2' : ''
                   }`}
                 />
               </Link>

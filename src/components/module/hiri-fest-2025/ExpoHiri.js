@@ -19,7 +19,7 @@ export default function ExpoHiri() {
         </div>
         {/* Desc */}
         <div className="px-5 py-5 max-w-[1000px]">
-          <p className="text-black text-justify lg:text-center text-sm md:text-md">
+          <p className="text-black text-justify lg:text-center text-sm md:text-base">
             Pulau Hiri sebagai salah satu wilayah yang kaya akan kekayaan kuliner lokal, menjadi
             tuan rumah dalam kegiatan Expo Kuliner Pulau Hiri 2025. Kegiatan ini menghadirkan cita
             rasa autentik dari enam kelurahan di Pulau Hiri yang masing-masing menampilkan kuliner

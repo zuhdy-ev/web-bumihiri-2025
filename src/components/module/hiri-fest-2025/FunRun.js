@@ -37,10 +37,9 @@ export default function FunRun() {
           <div className="w-full md:w-[60%] flex flex-col gap-4 items-center md:items-start">
             {/* Description */}
             <p className="text-black text-justify text-sm md:text-base leading-relaxed">
-              <span className="font-bold italic">FUN RUN: EXPLORE HIRI</span> adalah sebuah
-              event lari lintas alam yang mengajakmu menjelajahi pesona Pulau Hiri, Ternate, Maluku
-              Utara—mulai dari jalur alam yang menantang, udara segar khas pesisir, hingga keindahan
-              budaya lokal yang kental.
+              HiriXplore Run adalah sebuah event lari lintas alam yang mengajakmu menjelajahi pesona
+              Pulau Hiri, Ternate, Maluku Utara—mulai dari jalur alam yang menantang, udara segar
+              khas pesisir, hingga keindahan budaya lokal yang kental.
             </p>
 
             {/* Box Section */}

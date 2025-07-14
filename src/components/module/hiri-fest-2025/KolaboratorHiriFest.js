@@ -11,16 +11,16 @@ export default function KolaboratorHiriFest() {
         <Image
           src={'/assets/hiri-fest-2025/kolaborator/ternate-sport-tourism.svg'}
           alt="Ternate Sport Tourism"
-          width={50}
+          width={0}
           height={0}
-          className={'w-[50%] md:w-[40%] max-h-[300px]'}
+          className={'w-[70%] md:w-[40%] max-h-[200px]'}
         />
         <Image
           src={'/assets/hiri-fest-2025/kolaborator/ternate-berlari.svg'}
           alt="Ternate Berlari"
           width={0}
           height={0}
-          className={'w-[200px] max-h-[960px]'}
+          className={'w-[70%] md:w-[40%] max-h-[200px]'}
         />
       </div>
     </section>

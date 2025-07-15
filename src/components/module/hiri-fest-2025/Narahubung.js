@@ -6,7 +6,9 @@ const Narahubung = () => {
   return (
     <section className="w-full h-full bg-white flex items-center justify-center py-14 px-5">
       <div className="w-full max-w-[1920px]">
-        <h2 className="text-center text-black text-xl md:text-2xl font-bold mb-8">NARAHUBUNG</h2>
+        <h2 className="text-center text-black text-xl md:text-2xl font-bold mb-8">
+          CONTACT PERSON
+        </h2>
 
         {/* Card Container */}
         <div className="w-full h-full flex flex-col md:flex-row items-center justify-center gap-5">
@@ -24,7 +26,7 @@ const Narahubung = () => {
               email: 'hafidhrasyidp@gmail.com',
             },
             {
-              title: 'FUN RUN',
+              title: 'HIRIXPLORE RUN',
               name: 'Muhammad Harits Hammam',
               phone: '089653329001',
               email: '',
@@ -32,7 +34,7 @@ const Narahubung = () => {
           ].map(({ title, name, phone, email }, i) => (
             <div
               key={i}
-              className="bg-white rounded-xl shadow-md px-6 py-5 w-full max-w-[300px] min-h-[180px] text-center"
+              className="bg-white rounded-xl shadow-md px-6 py-5 w-full max-w-[300px] min-h-[150px] text-center"
             >
               <div className="text-[#DB8A05] font-bold italic mb-3">{title}</div>
               <div className="text-[#00261C] font-semibold text-[16px]">{name}</div>

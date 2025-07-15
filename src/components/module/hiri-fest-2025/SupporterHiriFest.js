@@ -9,18 +9,18 @@ export default function KolaboratorHiriFest() {
       </h2>
       <div className="w-fit flex flex-col items-center justify-center lg:flex-row gap-5">
         <Image
-          src={'/assets/hiri-fest-2025/kolaborator/ternate-sport-tourism.svg'}
+          src={'/assets/hiri-fest-2025/supporter/logo-kotaTernate.svg'}
           alt="Ternate Sport Tourism"
           width={0}
           height={0}
           className={'w-[70%] md:w-[90%] max-h-[150px]'}
         />
         <Image
-          src={'/assets/hiri-fest-2025/kolaborator/ternate-berlari.svg'}
+          src={'/assets/hiri-fest-2025/supporter/logo-badanGeopark.svg'}
           alt="Ternate Berlari"
           width={0}
           height={0}
-          className={'w-[70%] md:w-[90%] max-h-[150px]'}
+          className={'w-[85%] md:w-[90%] max-h-[150px]'}
         />
       </div>
     </section>

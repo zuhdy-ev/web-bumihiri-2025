@@ -5,6 +5,7 @@ import {
   TentangHiriFest,
   ExpoHiri,
   FunRun,
+  SupporterHiriFest,
   KolaboratorHiriFest,
   SponsorHiriFest,
   Narahubung,
@@ -19,6 +20,7 @@ export default function HiriFest2025() {
       <TentangHiriFest />
       <ExpoHiri />
       <FunRun />
+      <SupporterHiriFest />
       <KolaboratorHiriFest />
       <SponsorHiriFest />
       <Narahubung />

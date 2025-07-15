@@ -4,9 +4,7 @@ import Image from 'next/image'
 export default function KolaboratorHiriFest() {
   return (
     <section className="w-full h-1/2 bg-white text-black flex flex-col items-center justify-center p-5 md:py-10 gap-5">
-      <h2 className="text-center text-black text-xl md:text-2xl font-bold mb-8">
-        IN COLLABORATION
-      </h2>
+      <h2 className="text-center text-black text-xl md:text-2xl font-bold mb-8">SUPPORTED BY</h2>
       <div className="w-fit flex flex-col items-center justify-center lg:flex-row gap-5">
         <Image
           src={'/assets/hiri-fest-2025/supporter/logo-kotaTernate.svg'}

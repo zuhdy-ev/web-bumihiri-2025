@@ -1,8 +1,9 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Analytics } from '@vercel/analytics/next'
 import Script from 'next/script'
-import Analytics from '@/components/Analytics'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="font-made-tommy bg-white overflow-x-hidden">
         <SpeedInsights />
+        <GoogleAnalytics />
         <Analytics />
         {children}
         {/* <Footer /> */}

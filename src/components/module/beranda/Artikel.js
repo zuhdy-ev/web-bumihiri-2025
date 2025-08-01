@@ -3,7 +3,7 @@ import { ArtikelCard } from '@/components/element/artikel/page'
 import axios from 'axios'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-// import { convertToSlug } from '@/app/artikel/[kajianId]/page'
+import { convertToSlug } from '@/app/artikel/[artikelId]/page'
 import dataKajian from '@/data/artikelKajian.json'
 import Image from 'next/image'
 
@@ -39,22 +39,19 @@ export default function Artikel() {
             {/* Card */}
             <div className="w-full">
               <div className="w-full flex flex-wrap items-center justify-center gap-5 my-5">
-                {/* <div className="text-black">Artikel belum tersedia</div> */}
                 {dataArtikel
-                  ?.sort((a, b) => new Date(b.tgl_publish) - new Date(a.tgl_publish))
-                  .map((item) => {
-                    return (
-                      <div key={item.id}>
-                        <ArtikelCard
-                          gambar={item.gambar}
-                          judul={item.judul}
-                          kementerian={item.kementerian}
-                          // link={`/artikel/kajian/${convertToSlug(item.judul)}`}
-                          link={item.link || `/artikel/kajian/${convertToSlug(item.judul)}`}
-                        />
-                      </div>
-                    )
-                  })}
+                  ?.sort((a, b) => b.id - a.id) // Urutkan berdasarkan ID terbaru
+                  .slice(0, 4) // Ambil hanya 4 artikel pertama
+                  .map((item) => (
+                    <div key={item.id}>
+                      <ArtikelCard
+                        gambar={item.gambar}
+                        judul={item.judul}
+                        kementerian={item.kementerian}
+                        link={item.link || `/artikel/kajian/${convertToSlug(item.judul)}`}
+                      />
+                    </div>
+                  ))}
               </div>
               <div className="w-full flex items-center justify-center underline py-3">
                 <Link href={'/artikel'}>

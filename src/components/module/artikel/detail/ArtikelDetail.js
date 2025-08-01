@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
+import Footer from '@/components/layout/Footer'
 
 export default function ArtikelDetail({
   jenis,
@@ -11,13 +12,11 @@ export default function ArtikelDetail({
   deskripsi,
 }) {
   const baseUrl = process.env.NEXT_PUBLIC_FILAMENT_STORAGE
-  // const imageUrl = gambar ? `${baseUrl}/${gambar}` : '/assets/umum/default-placeholder-center.png'
 
   const handleBack = () => {
     window.history.back()
   }
 
-  // Fungsi untuk mengubah format tanggal
   const formatTanggal = (tgl) => {
     const hariArray = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu']
     const bulanArray = [
@@ -66,7 +65,7 @@ export default function ArtikelDetail({
               style={{
                 height: '100%',
                 width: '100%',
-                'object-fit': 'cover',
+                objectFit: 'cover',
               }}
               className="rounded-lg aspect-video"
             />
@@ -77,20 +76,23 @@ export default function ArtikelDetail({
             <h1 className="text-[25px] md:text-[35px] font-made-tommy-bold text-primary-blue text-center">
               {judul}
             </h1>
-            <p className="text-[17px] text-primary-blue text-center ">
+            <p className="text-[17px] text-primary-blue text-center">
               oleh <span>{kementerian}</span>
             </p>
           </div>
-          {/* <div className="font-bold text-[17px]">🟠 {jenis}</div> */}
           <div className="text-[15px] text-primary-blue text-center">
-            <p>{formatTanggal(tgl_publish)}</p> {/* Menggunakan fungsi formatTanggal */}
+            <p>{formatTanggal(tgl_publish)}</p>
           </div>
         </div>
-        <div
-          className="w-full text-[18px] max-w-[1000px] px-5 py-5 lg:pb-32 lg:px-20 text-justify text-pretty break-words text-black"
-          dangerouslySetInnerHTML={{ __html: deskripsi }}
-        />
+        <div className="w-full text-[18px] max-w-[1000px] px-5 py-5 lg:pb-32 lg:px-20 text-justify text-pretty break-words text-black">
+          {deskripsi.split(/\n{2,}/).map((para, i) => (
+            <p key={i} className="mb-4 whitespace-pre-wrap">
+              {para}
+            </p>
+          ))}
+        </div>
       </div>
+      <Footer active="" />
     </main>
   )
 }

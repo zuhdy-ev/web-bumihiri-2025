@@ -7,19 +7,19 @@ export default function SponsorHiriFest() {
       <h2 className="text-center text-black text-xl md:text-2xl font-bold mb-8">SPONSORED BY</h2>
       <div className="w-fit flex flex-col items-center justify-center lg:flex-row gap-5">
         <Image
-          src={'/assets/beranda/sponsor_pertamina.png'}
-          alt="Ternate Sport Tourism"
-          width={50}
+          src={'/assets/hiri-fest-2025/sponsor/sponsor-HiriFest25.png'}
+          alt="Sponsor Hiri Fest 2025"
+          width={100}
           height={0}
-          className={'w-full max-h-[960px]'}
+          className={'w-full max-w-[600px]'}
         />
-        <Image
+        {/* <Image
           src={'/assets/beranda/sponsor_batikAqilah.svg'}
           alt="Batik Aqilah"
           width={0}
           height={0}
           className={'w-[150px] max-h-[960px]'}
-        />
+        /> */}
       </div>
     </section>
   )
